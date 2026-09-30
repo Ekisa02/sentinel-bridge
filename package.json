@@ -1,0 +1,41 @@
+{
+  "name": "sentinel-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A modular Web3 infrastructure toolkit (RPC proxy, signer, IPFS, metrics) built with Next.js + TypeScript.",
+  "main": "src/server/index.ts",
+  "scripts": {
+    "dev": "next dev -p ${PORT:-3000}",
+    "build": "next build",
+    "start": "next start -p ${PORT:-3000}",
+    "lint": "eslint --ext .ts,.tsx src",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --colors",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,json,md}\""
+  },
+  "dependencies": {
+    "next": "13.4.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "ethers": "^6.7.0",
+    "ipfs-http-client": "^60.0.0",
+    "axios": "^1.4.0",
+    "pino": "^8.17.0",
+    "prom-client": "^14.1.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.0",
+    "prettier": "^3.1.1",
+    "jest": "^29.6.1",
+    "ts-jest": "^29.1.0",
+    "@types/jest": "^29.5.4",
+    "supertest": "^6.4.3",
+    "@types/supertest": "^2.0.12"
+  }
+}
